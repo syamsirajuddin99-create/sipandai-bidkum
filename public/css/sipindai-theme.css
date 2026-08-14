@@ -1,0 +1,305 @@
+/* =========================================================
+   SIPANDAI BIDKUM - GLOBAL THEME
+   ========================================================= */
+
+:root {
+    --sipandai-navy: #172235;
+    --sipandai-navy-dark: #101827;
+    --sipandai-navy-light: #243247;
+    --sipandai-gold: #f8bc0b;
+    --sipandai-gold-hover: #ffd44d;
+    --sipandai-text: #eef2f7;
+}
+
+/* =========================================================
+   BACKGROUND GLOBAL
+   ========================================================= */
+
+html,
+body,
+.fi-body {
+    min-height: 100%;
+}
+
+body.fi-body {
+    background:
+        linear-gradient(
+            rgba(15, 23, 42, 0.72),
+            rgba(15, 23, 42, 0.80)
+        ),
+        url('/images/Gambar Background Aplikasi Sipandai.jpg') center center / cover fixed !important;
+}
+
+/* =========================================================
+   LAYOUT UTAMA
+   ========================================================= */
+
+.fi-layout {
+    background: transparent !important;
+}
+
+.fi-main {
+    background: rgba(241, 245, 249, 0.84) !important;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+/* =========================================================
+   SIDEBAR
+   ========================================================= */
+
+.fi-sidebar {
+    background: var(--sipandai-navy) !important;
+    border-right: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 6px 0 25px rgba(0, 0, 0, 0.20);
+}
+
+.fi-sidebar-header {
+    background: var(--sipandai-navy) !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* =========================================================
+   BRAND SIPANDAI
+   ========================================================= */
+
+.fi-logo {
+    gap: 0.75rem !important;
+}
+
+.fi-logo img,
+.fi-logo-image {
+    border-radius: 0.7rem;
+}
+
+.fi-logo-text {
+    color: #ffffff !important;
+    font-size: 1rem !important;
+    font-weight: 800 !important;
+    letter-spacing: 0.06em;
+}
+
+/* =========================================================
+   NAVIGATION
+   ========================================================= */
+
+.fi-sidebar-item-label,
+.fi-sidebar-group-label {
+    color: rgba(255, 255, 255, 0.82) !important;
+}
+
+.fi-sidebar-item-button {
+    border-radius: 0.7rem !important;
+}
+
+.fi-sidebar-item-button:hover {
+    background: rgba(255, 255, 255, 0.08) !important;
+}
+
+.fi-sidebar-item.fi-active .fi-sidebar-item-button,
+.fi-sidebar-item-button.fi-active {
+    background: var(--sipandai-gold) !important;
+    color: #172235 !important;
+}
+
+.fi-sidebar-item.fi-active .fi-sidebar-item-label,
+.fi-sidebar-item.fi-active .fi-sidebar-item-icon,
+.fi-sidebar-item-button.fi-active .fi-sidebar-item-label,
+.fi-sidebar-item-button.fi-active .fi-sidebar-item-icon {
+    color: #172235 !important;
+}
+
+/* =========================================================
+   TOPBAR
+   ========================================================= */
+
+.fi-topbar {
+    background: rgba(255, 255, 255, 0.88) !important;
+    border-bottom: 1px solid rgba(15, 23, 42, 0.08);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+}
+
+/* =========================================================
+   PAGE CONTENT
+   ========================================================= */
+
+.fi-page {
+    position: relative;
+}
+
+.fi-page-content {
+    position: relative;
+}
+
+/* =========================================================
+   CARDS / SECTIONS / WIDGETS
+   ========================================================= */
+
+.fi-section,
+.fi-wi,
+.fi-ta-ctn,
+.fi-modal-window {
+    border-radius: 1rem !important;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+}
+
+/* =========================================================
+   TABLE
+   ========================================================= */
+
+.fi-ta-ctn {
+    background: rgba(255, 255, 255, 0.94) !important;
+    box-shadow: 0 12px 35px rgba(15, 23, 42, 0.10);
+}
+
+/* =========================================================
+   FORM
+   ========================================================= */
+
+.fi-section {
+    background: rgba(255, 255, 255, 0.94) !important;
+}
+
+.fi-input,
+.fi-select-input,
+.fi-fo-textarea {
+    border-radius: 0.65rem !important;
+}
+
+/* =========================================================
+   PRIMARY BUTTON
+   ========================================================= */
+
+.fi-btn-color-primary {
+    background: var(--sipandai-gold) !important;
+    color: #172235 !important;
+    border-color: var(--sipandai-gold) !important;
+    font-weight: 700 !important;
+}
+
+.fi-btn-color-primary:hover {
+    background: var(--sipandai-gold-hover) !important;
+    border-color: var(--sipandai-gold-hover) !important;
+}
+
+/* =========================================================
+   LOGIN BACKGROUND
+   ========================================================= */
+
+.fi-simple-layout {
+    min-height: 100vh;
+    background: transparent !important;
+}
+
+.fi-simple-main {
+    width: 100%;
+    max-width: 29rem;
+    padding: 2.25rem !important;
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    border-radius: 1.25rem !important;
+    background: rgba(23, 34, 53, 0.94) !important;
+    box-shadow: 0 25px 70px rgba(0, 0, 0, 0.45);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+}
+
+/* =========================================================
+   LOGIN LOGO
+   ========================================================= */
+
+.fi-simple-header {
+    text-align: center !important;
+}
+
+.fi-simple-header-logo {
+    display: block !important;
+    width: 5.25rem !important;
+    max-height: 5.25rem !important;
+    margin: 0 auto 1rem !important;
+    object-fit: contain;
+}
+
+/* =========================================================
+   LOGIN TITLE
+   ========================================================= */
+
+.fi-simple-header-heading {
+    display: block !important;
+    margin-top: 0.5rem !important;
+    color: #ffffff !important;
+    font-size: 1.65rem !important;
+    font-weight: 800 !important;
+    letter-spacing: 0.06em !important;
+    text-align: center !important;
+}
+
+.fi-simple-header-subheading {
+    display: block !important;
+    margin-top: 0.35rem !important;
+    color: rgba(255, 255, 255, 0.60) !important;
+    font-size: 0.72rem !important;
+    font-weight: 700 !important;
+    letter-spacing: 0.08em !important;
+    text-align: center !important;
+    text-transform: uppercase;
+}
+
+/* =========================================================
+   LOGIN LABEL
+   ========================================================= */
+
+.fi-simple-main .fi-fo-field-wrp-label label {
+    color: rgba(255, 255, 255, 0.70) !important;
+    font-size: 0.75rem !important;
+    font-weight: 700 !important;
+    text-transform: uppercase;
+}
+
+/* =========================================================
+   LOGIN INPUT
+   ========================================================= */
+
+.fi-simple-main .fi-input,
+.fi-simple-main input {
+    background: rgba(36, 50, 71, 0.90) !important;
+    border-color: rgba(255, 255, 255, 0.12) !important;
+    color: #ffffff !important;
+}
+
+.fi-simple-main .fi-input::placeholder,
+.fi-simple-main input::placeholder {
+    color: rgba(255, 255, 255, 0.42) !important;
+}
+
+/* =========================================================
+   LOGIN BUTTON
+   ========================================================= */
+
+.fi-simple-main .fi-btn-color-primary {
+    width: 100%;
+    min-height: 2.8rem;
+    background: var(--sipandai-gold) !important;
+    color: var(--sipandai-navy) !important;
+    border: none !important;
+    border-radius: 0.7rem !important;
+    font-weight: 800 !important;
+    letter-spacing: 0.03em;
+}
+
+.fi-simple-main .fi-btn-color-primary:hover {
+    background: var(--sipandai-gold-hover) !important;
+}
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 640px) {
+    .fi-simple-main {
+        margin-right: 1rem;
+        margin-left: 1rem;
+        padding: 1.5rem !important;
+    }
+}

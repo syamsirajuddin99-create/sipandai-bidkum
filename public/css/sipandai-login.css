@@ -1,0 +1,193 @@
+/* public/css/sipandai-login.css */
+
+html,
+body,
+.fi-body {
+    min-height: 100%;
+}
+
+body.fi-body {
+    background-image:
+        linear-gradient(
+            rgba(255, 0, 157, 0.4),
+            rgba(15, 23, 42, 0.55)
+        ),
+        url('/images/Gambar Background Aplikasi Sipandai.jpg') !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-attachment: fixed !important;
+}
+
+/*
+|--------------------------------------------------------------------------
+| LOGIN
+|--------------------------------------------------------------------------
+*/
+
+.fi-simple-layout {
+    min-height: 100vh;
+    background: transparent !important;
+}
+
+.fi-simple-main {
+    width: 100%;
+    max-width: 28rem;
+    padding: 2rem;
+    border-radius: 1.5rem;
+    background: rgba(255, 255, 255, 0.94);
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.35);
+    backdrop-filter: blur(12px);
+}
+
+.dark .fi-simple-main {
+    background: rgba(24, 24, 27, 0.94);
+}
+
+/*
+|--------------------------------------------------------------------------
+| APLIKASI ADMIN
+|--------------------------------------------------------------------------
+*/
+
+.fi-layout {
+    background: transparent !important;
+}
+
+.fi-main {
+    background: rgba(248, 250, 252, 0.82) !important;
+    backdrop-filter: blur(10px);
+}
+
+/*
+|--------------------------------------------------------------------------
+| SIDEBAR
+|--------------------------------------------------------------------------
+*/
+
+.fi-sidebar {
+    background: rgba(255, 255, 255, 0.92) !important;
+    backdrop-filter: blur(15px);
+    box-shadow: 5px 0 25px rgba(0, 0, 0, 0.08);
+}
+
+.dark .fi-sidebar {
+    background: rgba(24, 24, 27, 0.92) !important;
+}
+
+/*
+|--------------------------------------------------------------------------
+| TOPBAR
+|--------------------------------------------------------------------------
+*/
+
+.fi-topbar {
+    background: rgba(255, 255, 255, 0.88) !important;
+    backdrop-filter: blur(15px);
+}
+
+.dark .fi-topbar {
+    background: rgba(24, 24, 27, 0.88) !important;
+}
+
+/*
+|--------------------------------------------------------------------------
+| HALAMAN KONTEN
+|--------------------------------------------------------------------------
+*/
+
+.fi-page {
+    position: relative;
+}
+
+.fi-page-content {
+    padding: 1.5rem;
+    border-radius: 1rem;
+}
+
+/*
+|--------------------------------------------------------------------------
+| CARD / WIDGET / FORM
+|--------------------------------------------------------------------------
+*/
+
+.fi-section,
+.fi-wi-stats-overview-stat,
+.fi-ta-ctn,
+.fi-ta-table,
+.fi-modal-window,
+.fi-fo-field-wrp,
+.fi-in-entry-wrp {
+    backdrop-filter: blur(8px);
+}
+
+/*
+|--------------------------------------------------------------------------
+| DARK MODE
+|--------------------------------------------------------------------------
+*/
+
+.dark .fi-main {
+    background: rgba(255, 24, 140, 0.82) !important;
+}
+
+
+
+
+
+/* .fi-simple-layout {
+    position: relative;
+    min-height: 100vh;
+    background-image:
+        linear-gradient(
+            rgba(0, 0, 0, 0.35),
+            rgba(0, 0, 0, 0.55)
+        ),
+        url('/images/Gambar Background Aplikasi Sipandai.jpg') !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-attachment: fixed !important;
+}
+
+.fi-simple-main-ctn {
+    position: relative;
+}
+
+.fi-simple-main {
+    width: 100%;
+    max-width: 28rem;
+    padding: 2rem;
+    border-radius: 1.5rem;
+    background: rgba(255, 255, 255, 0.94);
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.35);
+    backdrop-filter: blur(10px);
+}
+
+.dark .fi-simple-main {
+    background: rgba(24, 24, 27, 0.94);
+}
+
+.fi-simple-header {
+    text-align: center;
+}
+
+.fi-simple-header-logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.fi-simple-header-heading {
+    color: #b91c1c;
+    font-weight: 800;
+    letter-spacing: 0.05em;
+}
+
+.dark .fi-simple-header-heading {
+    color: #fca5a5;
+}
+
+.fi-simple-header-subheading {
+    font-size: 0.875rem;
+} */
