@@ -7,6 +7,7 @@ use App\Filament\Resources\Agendas\Pages\EditAgenda;
 use App\Filament\Resources\Agendas\Pages\ListAgendas;
 use App\Filament\Resources\Agendas\Pages\ViewAgenda;
 use App\Filament\Resources\Agendas\Schemas\AgendaForm;
+use App\Filament\Resources\Agendas\Schemas\AgendaInfolist;
 use App\Filament\Resources\Agendas\Tables\AgendasTable;
 use App\Models\Agenda;
 use App\Support\AccessControl;
@@ -78,6 +79,11 @@ class AgendaResource extends Resource
         return AgendaForm::configure($schema);
     }
 
+    public static function infolist(Schema $schema): Schema
+    {
+        return AgendaInfolist::configure($schema);
+    }
+
     public static function table(Table $table): Table
     {
         return AgendasTable::configure($table)
@@ -104,6 +110,7 @@ class AgendaResource extends Resource
         ];
     }
 }
+
 
 // namespace App\Filament\Resources\Agendas;
 

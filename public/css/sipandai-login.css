@@ -1,4 +1,4 @@
-/* public/css/sipandai-login.css */
+public/css/sipandai-login.css */
 
 html,
 body,
@@ -9,7 +9,7 @@ body,
 body.fi-body {
     background-image:
         linear-gradient(
-            rgba(255, 0, 157, 0.4),
+            rgba(70, 64, 67, 0.4),
             rgba(15, 23, 42, 0.55)
         ),
         url('/images/Gambar Background Aplikasi Sipandai.jpg') !important;
@@ -118,7 +118,7 @@ body.fi-body {
 .fi-modal-window,
 .fi-fo-field-wrp,
 .fi-in-entry-wrp {
-    backdrop-filter: blur(8px);
+    backdrop-filter: blur(3px);
 }
 
 /*
@@ -128,7 +128,7 @@ body.fi-body {
 */
 
 .dark .fi-main {
-    background: rgba(255, 24, 140, 0.82) !important;
+    background: rgba(65, 53, 59, 0.82) !important;
 }
 
 
@@ -190,4 +190,4 @@ body.fi-body {
 
 .fi-simple-header-subheading {
     font-size: 0.875rem;
-} */
+}

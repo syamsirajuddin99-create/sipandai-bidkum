@@ -1,5 +1,5 @@
 <img
-    src="{{ asset('images/HUKUM_POLRI.png') }}"
+    src="{{ asset('images/Logo Baru Sipandai.png') }}"
     alt="Logo SIPANDAI BIDKUM"
     style="
         width: 60px !important;

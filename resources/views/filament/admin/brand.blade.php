@@ -8,7 +8,7 @@
     "
 >
     <img
-        src="{{ asset('images/HUKUM_POLRI.png') }}"
+        src="{{ asset('images/Logo Baru Sipandai.png') }}"
         alt="Logo Hukum Polri"
         style="
             width: 42px !important;
@@ -36,7 +36,7 @@
                 letter-spacing: -0.3px;
             "
         >
-            SIPANDAI BIDKUM
+            SIPANDAI
         </div>
 
         <div
@@ -46,7 +46,7 @@
                 margin-top: 2px;
             "
         >
-            Sistem Informasi Pengawasan dan Administrasi
+            sistem informasi pendapat dan saran hukum
         </div>
     </div>
 </div>

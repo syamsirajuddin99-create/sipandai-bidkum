@@ -11,7 +11,7 @@
         body {
             font-family: DejaVu Sans, sans-serif;
             font-size: 11px;
-            line-height: 1.5;
+            line-height: 1;
         }
 
         .header {
@@ -77,7 +77,7 @@
 
         .content-box {
             border: 1px solid #000;
-            padding: 10px;
+            padding: 5px;
             min-height: 50px;
         }
 
@@ -106,7 +106,7 @@
     <div class="header">
         <div class="header-text">
             <h2>KEPOLISIAN NEGARA REPUBLIK INDONESIA</h2>
-            <h2>KEPOLISIAN DAERAH SULAWESI SELATAN</h2>
+            <h2>DAERAH SULAWESI SELATAN</h2>
             <h3>BIDANG HUKUM</h3>
             <p>Jl. Perintis Kemerdekaan Km. 16 Makassar</p>
         </div>
@@ -115,8 +115,8 @@
     </div>
 
     <div class="title">
-        <h3>LAPORAN RANGKAIAN PENANGANAN PSH</h3>
-        <p>SISTEM INFORMASI PENGAWASAN DAN ADMINISTRASI</p>
+        <h3>LEMBAR DISPOSISI PENANGANAN PSH</h3>
+        <p>SISTEM INFORMASI PENDAPAT DAN SARAN HUKUM</p>
     </div>
 
     <div class="section-title">

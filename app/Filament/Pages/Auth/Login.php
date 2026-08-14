@@ -13,6 +13,6 @@ class Login extends BaseLogin
 
     public function getSubheading(): ?string
     {
-        return 'Sistem Informasi Pengawasan dan Pendampingan Hukum';
+        return 'sistem informasi pendapat dan saran hukum';
     }
 }

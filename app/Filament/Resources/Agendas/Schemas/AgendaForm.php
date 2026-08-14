@@ -24,7 +24,7 @@ class AgendaForm
                         titleAttribute: 'nomor_surat',
                         modifyQueryUsing: function (Builder $query): Builder {
                             return $query
-                                ->whereDoesntHave('agenda')
+                                //->whereDoesntHave('agenda')
                                 ->with(['satker', 'statusProgres'])
                                 ->orderByDesc('tanggal_surat');
                         },
