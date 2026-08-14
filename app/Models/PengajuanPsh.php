@@ -6,6 +6,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\HasOne;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 
 
 class PengajuanPsh extends Model
@@ -64,6 +65,23 @@ class PengajuanPsh extends Model
     {
         return $this->hasOne(HasilPsh::class, 'pengajuan_psh_id');
     }
+
+    public function disposisiKasubbid(): HasOne
+{
+    return $this->hasOne(
+        DisposisiKasubbid::class,
+        'pengajuan_psh_id'
+    );
+}
+
+public function penugasanPshes(): HasMany
+{
+    return $this->hasMany(
+        PenugasanPsh::class,
+        'pengajuan_psh_id'
+    );
+}
+
 }
 
 

@@ -6,6 +6,7 @@ use Filament\Models\Contracts\FilamentUser;
 use Filament\Panel;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 use Spatie\Permission\Traits\HasRoles;
 
 class User extends Authenticatable implements FilamentUser
@@ -38,6 +39,30 @@ class User extends Authenticatable implements FilamentUser
         return $this->belongsTo(Satker::class);
     }
 
+    public function disposisiKasubbids(): HasMany
+    {
+        return $this->hasMany(
+            DisposisiKasubbid::class,
+            'user_id'
+        );
+    }
+
+    public function penugasanPshes(): HasMany
+    {
+        return $this->hasMany(
+            PenugasanPsh::class,
+            'user_id'
+        );
+    }
+
+    public function penugasanYangDibuat(): HasMany
+    {
+        return $this->hasMany(
+            PenugasanPsh::class,
+            'ditugaskan_oleh'
+        );
+    }
+
     public function canAccessPanel(Panel $panel): bool
     {
         return true;
@@ -51,16 +76,16 @@ class User extends Authenticatable implements FilamentUser
 
 // namespace App\Models;
 
-// use Illuminate\Database\Eloquent\Factories\HasFactory;
+// use Filament\Models\Contracts\FilamentUser;
+// use Filament\Panel;
 // use Illuminate\Foundation\Auth\User as Authenticatable;
 // use Illuminate\Notifications\Notifiable;
-// use Illuminate\Database\Eloquent\Relations\BelongsTo;
-// use Illuminate\Database\Eloquent\Relations\HasMany;
 // use Spatie\Permission\Traits\HasRoles;
 
-// class User extends Authenticatable
+// class User extends Authenticatable implements FilamentUser
 // {
-//     use HasFactory, Notifiable, HasRoles;
+//     use HasRoles;
+//     use Notifiable;
 
 //     protected $fillable = [
 //         'name',
@@ -82,28 +107,19 @@ class User extends Authenticatable implements FilamentUser
 //         ];
 //     }
 
-//     public function satker(): BelongsTo
+//     public function satker()
 //     {
 //         return $this->belongsTo(Satker::class);
 //     }
 
-//     public function pengajuanPshes(): HasMany
+//     public function canAccessPanel(Panel $panel): bool
 //     {
-//         return $this->hasMany(PengajuanPsh::class);
+//         return true;
 //     }
 
-//     public function agendas(): HasMany
+//     public function hasAnySystemRole(array $roles): bool
 //     {
-//         return $this->hasMany(Agenda::class);
-//     }
-
-//     public function disposisis(): HasMany
-//     {
-//         return $this->hasMany(Disposisi::class);
-//     }
-
-//     public function hasilPshes(): HasMany
-//     {
-//         return $this->hasMany(HasilPsh::class);
+//         return $this->hasAnyRole($roles);
 //     }
 // }
+
