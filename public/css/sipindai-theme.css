@@ -24,8 +24,8 @@ body,
 body.fi-body {
     background:
         linear-gradient(
-            rgba(15, 23, 42, 0.72),
-            rgba(15, 23, 42, 0.80)
+            rgba(230, 37, 181, 0.72),
+            rgba(54, 104, 221, 0.8)
         ),
         url('/images/Gambar Background Aplikasi Sipandai.jpg') center center / cover fixed !important;
 }
@@ -39,7 +39,7 @@ body.fi-body {
 }
 
 .fi-main {
-    background: rgba(241, 245, 249, 0.84) !important;
+    background: rgba(202, 191, 28, 0.84) !important;
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
 }
@@ -73,7 +73,7 @@ body.fi-body {
 }
 
 .fi-logo-text {
-    color: #ffffff !important;
+    color: #33c53a !important;
     font-size: 1rem !important;
     font-weight: 800 !important;
     letter-spacing: 0.06em;
@@ -85,7 +85,7 @@ body.fi-body {
 
 .fi-sidebar-item-label,
 .fi-sidebar-group-label {
-    color: rgba(255, 255, 255, 0.82) !important;
+    color: rgba(238, 17, 127, 0.82) !important;
 }
 
 .fi-sidebar-item-button {
@@ -159,7 +159,7 @@ body.fi-body {
    ========================================================= */
 
 .fi-section {
-    background: rgba(255, 255, 255, 0.94) !important;
+    background: rgba(194, 13, 74, 0.94);S
 }
 
 .fi-input,

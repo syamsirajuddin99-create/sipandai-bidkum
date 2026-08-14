@@ -11,6 +11,7 @@ use Filament\Http\Middleware\DispatchServingFilamentEvent;
 use Filament\Pages\Dashboard;
 use Filament\Panel;
 use Filament\PanelProvider;
+use Filament\Support\Assets\Css;
 use Filament\Support\Colors\Color;
 use Filament\Widgets\AccountWidget;
 use Filament\Widgets\FilamentInfoWidget;
@@ -33,12 +34,15 @@ class AdminPanelProvider extends PanelProvider
 
             /*
             |--------------------------------------------------------------------------
-            | BRANDING APLIKASI
+            | BRANDING
             |--------------------------------------------------------------------------
             */
-            ->brandName('SIPANDAI BIDKUM')
-            // ->brandLogo(asset('images/HUKUM_POLRI.png'))
-            // ->brandLogoHeight('3rem')
+            ->brandName('')
+->brandLogo(fn () => request()->routeIs('filament.admin.auth.login')
+    ? view('filament.admin.login-brand')
+    : view('filament.admin.brand')
+)
+            ->brandLogoHeight('3rem')
             ->favicon(asset('images/HUKUM_POLRI.png'))
 
             /*
@@ -47,7 +51,7 @@ class AdminPanelProvider extends PanelProvider
             |--------------------------------------------------------------------------
             */
             ->assets([
-                \Filament\Support\Assets\Css::make(
+                Css::make(
                     'sipandai-login',
                     asset('css/sipandai-login.css')
                 ),

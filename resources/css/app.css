@@ -7,3 +7,58 @@
     --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
         'Segoe UI Symbol', 'Noto Color Emoji';
 }
+
+/* =========================================
+   SIPANDAI BIDKUM - BRANDING
+   ========================================= */
+
+.sipandai-brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    min-width: 0;
+    overflow: hidden;
+}
+
+.sipandai-brand__logo {
+    width: 42px !important;
+    height: 42px !important;
+    min-width: 42px !important;
+    max-width: 42px !important;
+    max-height: 42px !important;
+    object-fit: contain !important;
+    display: block !important;
+}
+
+.sipandai-brand__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 0;
+    line-height: 1.2;
+}
+
+.sipandai-brand__title {
+    font-size: 16px;
+    font-weight: 800;
+    white-space: nowrap;
+    color: #1f2937;
+}
+
+.sipandai-brand__subtitle {
+    margin-top: 2px;
+    font-size: 10px;
+    font-weight: 600;
+    white-space: nowrap;
+    color: #6b7280;
+}
+
+/* Paksa semua gambar logo pada branding tidak membesar */
+.sipandai-brand img {
+    width: 42px !important;
+    height: 42px !important;
+    min-width: 42px !important;
+    max-width: 42px !important;
+    max-height: 42px !important;
+    object-fit: contain !important;
+}

@@ -4,7 +4,7 @@ namespace App\Filament\Resources\Disposisis\Schemas;
 
 use App\Models\Agenda;
 use Filament\Forms\Components\DateTimePicker;
-use Filament\Forms\Components\FileUpload;
+//use Filament\Forms\Components\FileUpload;
 use Filament\Forms\Components\Hidden;
 use Filament\Forms\Components\Select;
 use Filament\Forms\Components\Textarea;
@@ -58,16 +58,16 @@ class DisposisiForm
                     ->required()
                     ->columnSpanFull(),
 
-                FileUpload::make('file_disposisi')
-                    ->label('File Disposisi')
-                    ->directory('sipandai/disposisi')
-                    ->acceptedFileTypes([
-                        'application/pdf',
-                    ])
-                    ->maxSize(10240)
-                    ->downloadable()
-                    ->openable()
-                    ->columnSpanFull(),
+                // FileUpload::make('file_disposisi')
+                //     ->label('File Disposisi')
+                //     ->directory('sipandai/disposisi')
+                //     ->acceptedFileTypes([
+                //         'application/pdf',
+                //     ])
+                //     ->maxSize(10240)
+                //     ->downloadable()
+                //     ->openable()
+                //     ->columnSpanFull(),
 
                 DateTimePicker::make('waktu_disposisi')
                     ->label('Waktu Disposisi')

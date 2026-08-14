@@ -3,6 +3,7 @@
 namespace App\Filament\Resources\Disposisis\Tables;
 
 use App\Models\Disposisi;
+use Filament\Actions\Action;
 use Filament\Actions\BulkActionGroup;
 use Filament\Actions\DeleteAction;
 use Filament\Actions\DeleteBulkAction;
@@ -58,6 +59,19 @@ class DisposisisTable
             ->defaultSort('waktu_disposisi', 'desc')
             ->actions([
                 ViewAction::make(),
+
+                Action::make('print_pdf')
+                    ->label('Print PDF')
+                    ->icon('heroicon-o-printer')
+                    ->url(
+                        fn (Disposisi $record): string => route(
+                            'disposisis.print',
+                            [
+                                'disposisi' => $record->id,
+                            ]
+                        )
+                    )
+                    ->openUrlInNewTab(),
 
                 EditAction::make()
                     ->visible(fn (): bool => static::canManage()),
